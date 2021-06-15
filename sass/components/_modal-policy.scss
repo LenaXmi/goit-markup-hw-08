@@ -1,0 +1,26 @@
+.policy {
+  @extend %flex;
+  margin-top: 20px;
+}
+
+.policy__terms {
+  display: inline-block;
+  color: $mainAccentColor;
+  text-decoration-color: $mainAccentColor;
+}
+
+.policy__label .policy__terms:focus {
+  outline-style: solid;
+  outline-color: $mainTextColor;
+}
+
+.policy__label {
+  @extend %flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}

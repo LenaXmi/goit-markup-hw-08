@@ -1,0 +1,25 @@
+// .section {
+//   text-align: center;
+//   padding-top: 118px;
+//   padding-bottom: 118px;
+// }
+
+.hero-container {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    color: $mainBackgroundColor;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}

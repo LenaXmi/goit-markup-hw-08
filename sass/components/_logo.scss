@@ -1,0 +1,42 @@
+.header-logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  // margin-right: 93px;
+
+  color: $mainTextColor;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &__text {
+    color: $mainAccentColor;
+  }
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  color: $mainAccentColor;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &__text {
+    color: $mainAccentColor;
+  }
+
+  &__text--white {
+    color: $mainBackgroundColor;
+  }
+}

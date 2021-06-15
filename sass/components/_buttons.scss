@@ -1,0 +1,130 @@
+// Hero button
+.order {
+  @extend %btn;
+
+  padding: 10px 32px;
+  margin-top: 30px;
+  min-width: 200px;
+
+  &:hover,
+  &:focus {
+    color: $mainBackgroundColor;
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Subscription button
+.subscription-btn {
+  @extend %btn;
+  margin-top: 20px;
+ 
+
+  position: relative;
+  margin-left: 12px;
+  padding: 10px 29px;
+  min-width: 200px;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+// Modal buttons
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: $mainAccentColor;
+  }
+
+  &__close {
+    fill: currentColor;
+  }
+}
+
+.btn-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  &__submit {
+    text-align: center;
+    padding: 10px 32px;
+
+    min-width: 200px;
+    background-color: $mainAccentColor;
+    color: $mainBackgroundColor;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__submit:hover,
+  &__submit:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Portfolio filter-buttons
+.filters {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    color: $mainBackgroundColor;
+    background-color: $mainAccentColor;
+    /* outline: none; */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  &__btn {
+    padding: 6px 22px;
+
+    color: $mainTextColor;
+    background-color: #f5f4fa;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+
+    border-radius: 4px;
+    border: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

@@ -1,0 +1,44 @@
+.features-section {
+  @extend %paddings;
+}
+
+.features-container {
+
+   @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @extend %containerGeometry;
+
+  &__list {
+    // display: flex;
+    // justify-content: space-between;
+
+    // &__item {
+    //   flex-basis: calc((100% - 90px) / 4);
+    // }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 10px;
+
+    color: $secondaryColor;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}

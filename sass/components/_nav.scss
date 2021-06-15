@@ -1,0 +1,11 @@
+.header-container {
+  @extend %containerGeometry;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
+
+.navigation {
+  border-bottom: 1px solid #ececec;
+}

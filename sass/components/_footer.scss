@@ -1,0 +1,9 @@
+footer {
+  @extend %paddings;
+
+  background-color: $pageBackgroundColor;
+}
+
+.footer-container {
+  @extend %containerGeometry;
+}

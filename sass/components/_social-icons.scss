@@ -1,0 +1,51 @@
+.social-media {
+  @extend %flex;
+  margin-top: 16px;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  &__link {
+    @extend %flex;
+    width: 44px;
+    height: 44px;
+
+    color: #afb1b8;
+    border-radius: 50%;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link:hover {
+    color: $mainBackgroundColor;
+    background-color: $mainAccentColor;
+    border-radius: 50%;
+  }
+
+  &__link:focus {
+    color: $mainBackgroundColor;
+    background-color: $mainAccentColor;
+    /* outline: none; */
+    border-radius: 50%;
+  }
+}
+
+.join-container__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.subscription-btn__icon {
+  position: absolute;
+  right: 28px;
+  bottom: 13px;
+}

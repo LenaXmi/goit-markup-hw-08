@@ -1,0 +1,11 @@
+.site-nav {
+  display: none;
+}
+
+.our-works {
+  display: none;
+}
+
+.visually-hidden {
+  @extend %hiddenTitle;
+}
