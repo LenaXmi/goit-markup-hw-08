@@ -2,19 +2,20 @@
   @media screen and (max-width: 480px) {
     display: none;
   }
+  @media screen and (max-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
 
-  display: flex;
-  margin-left: auto;
+    margin-left: auto;
+  }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
   }
 
   &__mail,
   &__tel {
-    @extend %flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // @extend %flex;
 
     color: $secondaryColor;
 

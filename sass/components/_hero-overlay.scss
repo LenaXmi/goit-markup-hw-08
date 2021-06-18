@@ -1,6 +1,9 @@
 .overlay {
   max-width: 480px;
   height: 400px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
   margin-left: auto;
   margin-right: auto;
 

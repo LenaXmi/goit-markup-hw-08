@@ -26,22 +26,54 @@
         <a class="header-logo" href="./index.html">
           <span class="header-logo__text">Web</span>Studio
         </a>
-        <nav>
-          <ul class="site-nav">
-            <li class="site-nav__item">
+        <nav class="page-nav">
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
               <a
-                class="site-nav__link site-nav__link--highlight"
+                class="page-nav__link page-nav__link--highlight"
                 href="./index.html"
                 >Студия</a
               >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакты</a>
+            <li class="page-nav__item">
+              <a class="page-nav__link" href="">Контакты</a>
             </li>
           </ul>
+          <button
+            class="mobile-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="modal-mobile"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="mobile-menu__close"
+                href="./images/symbol-defs.svg#cross"
+              ></use>
+              <use
+                class="mobile-menu__burger"
+                href="./images/symbol-defs.svg#menu"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- Mobile menu -->
+
+          <!-- <div data-modal class="backdrop">
+            <div class="modal-mobile"></div>
+          </div> -->
+
+          <!-- <div class="modal-mobile" id="modal-mobile" data-menu>
+            Cdkjfgndflkhl;g
+          </div> -->
         </nav>
 
         <!--Contacts-->
@@ -166,7 +198,7 @@
               </div>
             </li>
             <li class="works-container__pic">
-              <div class="our-works__label">
+              <div class="works-container__label">
                 <img
                   src="./images/box2.jpg"
                   alt="Разработака приложений"
@@ -594,7 +626,7 @@
         </div>
         <div class="subscription">
           <b class="subscription__title">Подпишитесь на рассылку</b>
-          <div>
+          <div class="subscription__form">
             <label
               ><input
                 type="text"
@@ -611,6 +643,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn" data-modal-close type="button">
@@ -690,6 +725,8 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

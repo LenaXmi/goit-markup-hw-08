@@ -1,3 +1,41 @@
+// Mobile menu button
+
+.mobile-menu {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  // &__close {
+  //   display: none;
+  // }
+}
+
+.mobile-menu__close {
+  display: none;
+}
+.mobile-menu.is-open .mobile-menu__close {
+  display: block;
+}
+
+.mobile-menu.is-open .mobile-menu__burger {
+  display: none;
+}
+
+//   &__burger {
+//     display: none;
+//   }
+// }
+
 // Hero button
 .order {
   @extend %btn;
@@ -17,13 +55,20 @@
 // Subscription button
 .subscription-btn {
   @extend %btn;
+
   margin-top: 20px;
- 
 
   position: relative;
-  margin-left: 12px;
+
   padding: 10px 29px;
-  min-width: 200px;
+
+  @media screen and(min-width: 768px) {
+    width: 200px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {
@@ -36,9 +81,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   width: 30px;
   height: 30px;
 
@@ -58,9 +101,7 @@
 }
 
 .btn-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   margin-top: 30px;
 
   &__submit {
@@ -85,46 +126,5 @@
   &__submit:focus {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
-
-// Portfolio filter-buttons
-.filters {
-  display: flex;
-  margin-bottom: 50px;
-  align-items: center;
-  justify-content: center;
-
-  &__item:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  &__btn:hover,
-  &__btn:focus {
-    color: $mainBackgroundColor;
-    background-color: $mainAccentColor;
-    /* outline: none; */
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  &__btn {
-    padding: 6px 22px;
-
-    color: $mainTextColor;
-    background-color: #f5f4fa;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-
-    border-radius: 4px;
-    border: none;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
