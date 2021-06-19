@@ -1,0 +1,10 @@
+.header-contacts__icon {
+
+  margin-right: 8px;
+  fill: currentColor;
+
+  @media screen and(min-width:1200px) {
+    margin-right: 10px;
+    
+  }
+}

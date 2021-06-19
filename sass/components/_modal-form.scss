@@ -10,13 +10,19 @@
 }
 
 .modal__form {
-  @media screen and(min-widt:480px) {
-    width: 370px;
+  @media screen and (min-width:1200px){
+    
+      width: 448px;
+    height: 342px;
+    
   }
-  width: 448px;
+  
+  width: 370px;
   height: 342px;
+  
   margin: auto;
 }
+
 
 .modal__form-field {
   display: flex;
@@ -42,7 +48,7 @@
 }
 
 .modal__input {
-  width: 448px;
+width: 370px;
   height: 40px;
   padding-left: 32px;
 
@@ -53,8 +59,14 @@
   box-shadow: none;
 }
 
+@media screen and (min-width:1200px) {
+  .modal__input{
+    width: 448px;
+  }
+}
+
 .modal__comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
 
   padding: 12px 16px;
@@ -64,6 +76,12 @@
   border-radius: 4px;
   resize: none;
   box-shadow: none;
+}
+
+@media screen and (min-width:1200px) {
+  .modal__comment{
+    width: 448px;
+  }
 }
 
 .modal__comment::placeholder {

@@ -55,8 +55,12 @@
 // Subscription button
 .subscription-btn {
   @extend %btn;
+min-width: 200px;
 
+@media screen and (max-width:1199px) {
   margin-top: 20px;
+}
+
 
   position: relative;
 

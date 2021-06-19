@@ -23,11 +23,13 @@
   }
 }
 .footer-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 20px;
+  @media screen and(max-width:480px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
 
   color: $mainAccentColor;
   font-family: Raleway;

@@ -1,9 +1,16 @@
 .join-container {
-  // display: block;
-  // margin-left: 70px;
-  margin-bottom: 60px;
+  display: block;
+  
+  @media screen and (min-width: 480px){
+    margin-bottom: 60px;
+  }
+  
   @media screen and (min-width: 768px) {
     margin-left: 165px;
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-left: 70px;
   }
 
   &__title {
@@ -15,7 +22,10 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
+    
+    @media screen and (min-width:480px) and (max-width:1199px) {
+      text-align: center;
+    }
 
     color: $mainBackgroundColor;
   }
