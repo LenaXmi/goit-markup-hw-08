@@ -24,10 +24,7 @@
         margin-bottom: 302px;
     }
 
-    &__item{
-       
-        
-    }
+ 
 &__item:not(:last-child){
     margin-bottom: 32px;
 }
@@ -41,13 +38,19 @@ line-height: 1.18;
 letter-spacing: 0.02em;
     }
 
+    &__link--highlight{
+        color: $mainAccentColor;
+    }
+
     &__tel{
         margin-bottom: 32px;
         color: $secondaryColor;
         font-style: normal;
 font-weight: 500;
-font-size: 34px;
-line-height: 1.18;
+
+font-size: 24px;
+line-height: 1.16;
+
 
 
 letter-spacing: 0.02em;
@@ -58,10 +61,25 @@ letter-spacing: 0.02em;
         font-style: normal;
 font-weight: 500;
 font-size: 24px;
-line-height: 28px;
+line-height: 1.16;
 letter-spacing: 0.02em;
     }
 
+    &__tel:hover,
+    &__tel:focus{
+        color: $mainAccentColor;
+        font-size: 34px;
+line-height: 1.18;
+
+    }
+
+    &__mail:hover,
+    &__mail:focus{
+        color: $mainAccentColor;
+        font-size: 34px;
+line-height: 1.18;
+
+    }
     &__contacts-list{
         margin-bottom: 64px;
     }
