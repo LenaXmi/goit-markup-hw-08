@@ -2,6 +2,14 @@ body {
   @extend %basic;
 }
 
+body.modal-open{
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
 ul {
   margin: 0;
   padding-left: 0;

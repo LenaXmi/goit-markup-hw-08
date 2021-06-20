@@ -16,7 +16,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
-  @media screen and (min-width:480px) and (max-width:1199px) {
+  @media screen  and (max-width:1199px) {
     text-align: center;
   }
     
@@ -43,7 +43,7 @@
   }
 
   &__form {
-    @media screen and (min-width:480px) and (max-width:1199px) {
+    @media screen  and (max-width:1199px) {
       display: flex;
       align-items: center;
       justify-content: center;

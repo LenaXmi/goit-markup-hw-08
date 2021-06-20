@@ -9,12 +9,16 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+
+  @media screen and(min-width:1200px) {
+    width: 1200px;
+  }
 }
 
 .filters-container__list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
+
   padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {

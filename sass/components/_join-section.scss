@@ -1,7 +1,7 @@
 .join-container {
   display: block;
   
-  @media screen and (min-width: 480px){
+  @media screen and (max-width: 767px){
     margin-bottom: 60px;
   }
   
@@ -23,7 +23,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
-    @media screen and (min-width:480px) and (max-width:1199px) {
+    @media screen  and (max-width:1199px) {
       text-align: center;
     }
 
