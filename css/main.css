@@ -1018,10 +1018,25 @@ footer {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 399px) {
+  .mobile-menu__social {
+    margin-bottom: 10px;
+  }
+}
+
 .mobile-menu__flex-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 399px) {
+  .mobile-menu__flex-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .mobile-menu.is-open {

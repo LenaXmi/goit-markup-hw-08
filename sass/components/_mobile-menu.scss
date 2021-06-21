@@ -17,6 +17,7 @@ z-index: 1;
 
 
     &__container{
+    
         position: relative;
   padding: 48px 40px;
     }
@@ -91,6 +92,7 @@ line-height: 1.18;
     }
     
     &__item-social{
+       
         display: flex;
     }
     &__item-social:not(:last-child){
@@ -110,6 +112,9 @@ line-height: 1.18;
     }
 
     &__social{
+        @media screen and(max-width:399px) {
+            margin-bottom: 10px;
+        }
        color: $mainAccentColor;
         font-weight: 500;
 font-size: 18px;
@@ -123,7 +128,13 @@ letter-spacing: 0.02em;
 
     &__flex-list{
         display: flex;
+        @media screen and(max-width:399px) {
+            flex-direction: column;
+
+        }
+      
     }
+
 }
 
 
@@ -133,4 +144,3 @@ letter-spacing: 0.02em;
     pointer-events: auto;
     transform: translateX(0);
 }
-
