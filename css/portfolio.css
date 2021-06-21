@@ -438,7 +438,7 @@ footer {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -952,6 +952,12 @@ footer {
   text-decoration: none;
 }
 
+@media screen and (max-width: 479px) {
+  .product-card__pic {
+    width: 100%;
+  }
+}
+
 .product-card__border {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1077,7 +1083,13 @@ footer {
   outline: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 460px) {
+  .subscription__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 461px) {
   .subscription__input {
     width: 450px;
   }
@@ -1106,7 +1118,7 @@ footer {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .portfolio-section {
     padding-top: 60px;
     padding-bottom: 60px;

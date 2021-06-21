@@ -29,7 +29,11 @@
   }
 
   &__input {
-    @media screen and (max-width: 1199px) {
+@media screen and(max-width:460px) {
+  width: 100%;
+}
+
+    @media screen and (min-width:461px) {
       width: 450px;
     }
     
