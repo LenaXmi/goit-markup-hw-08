@@ -2,24 +2,15 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (max-width: 768px) {
-    
-    padding-top: 21px;
-    padding-bottom: 21px;
-    margin-left: auto;
 
-    
-  }
-
+  margin-left: auto;
   @media screen and(min-width:1200px) {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-left: auto;
+
   }
 
   &__item:not(:last-child) {
-    @media screen and (max-width: 768px){
+    @media screen and (min-width: 768px){
       margin-bottom: 10px;
     }
    @media screen and(min-width:1200px) {
@@ -28,12 +19,26 @@
    }
   }
 
+  &__mail{
+    @media screen and(max-width:1199px) {
+      padding-top: 21px;
+    }
+  }
+
+  &__tel{
+    @media screen and(max-width:1199px) {
+      padding-bottom: 21px;
+    }
+  }
+
   &__mail,
   &__tel {
     @media screen and(min-width:1200px){
      display: flex;
      align-items: center;
      justify-content: center;
+     padding-top: 32px;
+     padding-bottom: 32px;
     }
     
 
@@ -57,14 +62,16 @@
     color: $mainAccentColor;
   }
 }
-
+.footer-address{
+  @media screen and (max-width:767px){
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
 .footer-contacts {
   font-style: normal;
   
-@media screen and (max-width:767px){
-  margin-bottom: 60px;
-  text-align: center;
-}
+
 margin-top: 20px;
 
   &__list {

@@ -29,7 +29,7 @@
 
 .backdrop.is-hidden .modal {
   @media screen and(min-width:1200px) {
-    transform: translate(-50%, -50%) scale(0.7);
+    transform: translate(-50%, -50%), scale(0.7);
   }
   @media screen and(min-width:768px) {
     transform: scale(0.7);

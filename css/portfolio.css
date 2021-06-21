@@ -65,6 +65,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -206,17 +210,13 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.header-contacts {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 767px) {
   .header-contacts {
     display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header-contacts {
-    padding-top: 21px;
-    padding-bottom: 21px;
-    margin-left: auto;
   }
 }
 
@@ -225,13 +225,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-left: auto;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -240,6 +237,18 @@ img {
 @media screen and (min-width: 1200px) {
   .header-contacts__item:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-contacts__mail {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-contacts__tel {
+    padding-bottom: 21px;
   }
 }
 
@@ -264,6 +273,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -275,16 +286,16 @@ img {
   color: #2196f3;
 }
 
-.footer-contacts {
-  font-style: normal;
-  margin-top: 20px;
-}
-
 @media screen and (max-width: 767px) {
-  .footer-contacts {
+  .footer-address {
     margin-bottom: 60px;
     text-align: center;
   }
+}
+
+.footer-contacts {
+  font-style: normal;
+  margin-top: 20px;
 }
 
 .footer-contacts__list {
@@ -365,7 +376,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -376,7 +387,13 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-container__list {
+    margin-bottom: 50px;
   }
 }
 
@@ -453,9 +470,8 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -474,19 +490,6 @@ footer {
 
 .join-container {
   display: block;
-}
-
-@media screen and (max-width: 767px) {
-  .join-container {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .join-container {
-    margin-left: 165px;
-    margin-bottom: 102px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -622,6 +625,7 @@ footer {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
 }
 
 .mobile-menu__container {
@@ -931,11 +935,21 @@ footer {
 }
 
 .product-card__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   text-decoration: none;
 }
 
 .product-card__border {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
@@ -1017,7 +1031,7 @@ footer {
           flex-direction: column;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (max-width: 1199px) {
   .subscription {
     margin-top: 60px;
   }
@@ -1110,6 +1124,7 @@ footer {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
 }
 
 .mobile-menu__container {

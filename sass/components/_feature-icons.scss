@@ -1,17 +1,20 @@
 .features-container__icon {
   @extend %flex;
   background-color: #f5f4fa;
-  width: 450px;
+ 
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
   
+  @media screen and (max-width:767px) {
+    max-width: 450px;
+  }
 
   @media screen and (min-width: 768px) {
-    width: 354px;
+    max-width: 354px;
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    max-width: 270px;
   }
 
 }
