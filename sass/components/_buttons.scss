@@ -33,7 +33,7 @@ padding: 0;
 
   padding: 10px 32px;
   margin-top: 30px;
-  min-width: 200px;
+  // min-width: 200px;
 
   &:hover,
   &:focus {
@@ -46,7 +46,7 @@ padding: 0;
 // Subscription button
 .subscription-btn {
   @extend %btn;
-min-width: 200px;
+width: 170px;
 
 @media screen and (max-width:1199px) {
   margin-top: 20px;
@@ -58,7 +58,7 @@ min-width: 200px;
   padding: 10px 29px;
 
   @media screen and(min-width: 768px) {
-    width: 200px;
+    max-width: 200px;
   }
 
   @media screen and(min-width: 1200px) {

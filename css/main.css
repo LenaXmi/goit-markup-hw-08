@@ -123,7 +123,6 @@ img {
 .order {
   padding: 10px 32px;
   margin-top: 30px;
-  min-width: 200px;
 }
 
 .order:hover, .order:focus {
@@ -134,7 +133,7 @@ img {
 }
 
 .subscription-btn {
-  min-width: 200px;
+  width: 170px;
   position: relative;
   padding: 10px 29px;
 }
@@ -147,7 +146,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .subscription-btn {
-    width: 200px;
+    max-width: 200px;
   }
 }
 
@@ -694,6 +693,9 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -880,6 +882,8 @@ footer {
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   color: #2196f3;
   font-family: Raleway;
   font-weight: 700;
@@ -887,21 +891,6 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-@media screen and (max-width: 767px) {
-  .footer-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 20px;
-  }
 }
 
 .footer-logo__text {
@@ -1485,7 +1474,7 @@ footer {
 }
 
 .subscription__input {
-  max-width: 450px;
+  max-width: 400px;
   width: 100%;
   padding: 15px;
   font-size: 14px;
@@ -1542,7 +1531,7 @@ footer {
   margin-bottom: 30px;
   color: #212121;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
