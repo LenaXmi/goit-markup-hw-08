@@ -1,65 +1,41 @@
 .subscription {
-  display: flex;
-  flex-direction: column;
-
-@media screen and(max-width:1199px) {
-  margin-top: 60px;
-}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 
-
-
   &__title {
+    display: block;
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
-  @media screen  and (max-width:1199px) {
-    text-align: center;
-  }
-    
 
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
 
     color: #ffffff;
   }
 
   &__input {
-@media screen and(max-width:460px) {
-  width: 100%;
-}
+    max-width: 450px;
+    width: 100%;
 
-    @media screen and (min-width:461px) {
-      width: 450px;
-    }
-    
-  
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
+    padding: 15px;
     font-size: 14px;
     color: $mainBackgroundColor;
     background-color: $pageBackgroundColor;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     outline: none;
-  }
 
-  &__form {
-    @media screen  and (max-width:1199px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-     
+    @media screen and(min-width:1200px) {
+      width: 358px;
     }
-    
   }
 }
-
-
-

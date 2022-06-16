@@ -1,9 +1,7 @@
 // Mobile menu button
 
 .menu-button {
-  // position: absolute;
-  // bottom: 22px;
-  // right: 22px;
+
 
   display: inline-flex;
   margin: 0;
@@ -15,9 +13,6 @@
     display: none;
   }
 
-  // &__close {
-  //   display: none;
-  // }
 }
 
 .mobile-menu__close{
@@ -30,21 +25,7 @@
   background-color: transparent;
 padding: 0;
 }
-// .mobile-menu__close {
-//   display: none;
-// }
-// .mobile-menu.is-open .mobile-menu__close {
-//   display: block;
-// }
 
-// .mobile-menu.is-open .mobile-menu__burger {
-//   display: none;
-// }
-
-//   &__burger {
-//     display: none;
-//   }
-// }
 
 // Hero button
 .order {
